@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignments</title>
+    <style>
+        .nav{
+            text-align: center;
+            margin-top: 30px;
+        }
+        a{
+            margin-left: 20px;
+            background-color: antiquewhite;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+        a:hover{
+            box-shadow: 0.5px 0.5px 10px grey;
+            transition: 0.5s ease;
+        }
+        h1{
+            margin-top: 20%;
+            margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="index.html">Assignment 1</a>
+        <a href="#">Assignment 2</a>
+        <a href="index3.html">Assignment 3</a>
+        <a href="index4.html">Assignment 4</a>
+    </div>
+    
+    <h1>if, else if, else <br>
+        Assignments</h1>
+
+<script>
+//1.
+let numbers = prompt('Write any ASCII number.')
+if (numbers >= 65 && numbers <=90 ){
+        alert('In ASCII code the letter u typed is in Uppercase.')
+}
+else if(numbers >= 97 && numbers <=122){
+    alert('In ASCII code the letter u typed is in Lowercase')
+}
+else{
+    alert('Wrong')
+}
+
+//2.
+let num1 = prompt('Write any 1st number of your choice')
+let num2 = prompt('Write any 2nd number of your choice')
+
+if (num1 == num2) {
+    alert('Both the numbers are equal')
+}
+else if(num1 > num2){
+    alert(num1+ " " +'is greater than'+ " " + num2)
+}
+else if(num1 < num2){
+    alert(num2+ " " +'is greater than'+ " " +num1)
+}
+else{
+    alert('You did not enter any number')
+}
+
+//3.
+let number = prompt('Enter any positive or negative number')
+
+if(number > 0){
+    alert('You have entered Positive number')
+}
+else{
+    alert('You have entered Negative Number')
+}
+
+//4.
+let userNumber = prompt('Enter any Vowel')
+// let vowels = ['a','e','i','o','u']
+
+if (userNumber == 'a'){
+    alert('True')
+}
+else if(userNumber == 'e'){
+    alert('True')
+}
+else if(userNumber == 'i'){
+    alert('True')
+}
+else if(userNumber == 'o'){
+    alert('True')
+}
+else if(userNumber == 'u'){
+    alert('True')
+}
+else{
+    alert('False')
+}
+
+//5.
+let none = ''
+let password = '123456'
+let pass = prompt('Enter a Valid Password')
+
+if(pass == password){
+    alert('Correct')
+}
+else if (pass == none) {
+    alert('Please enter a password')
+    prompt('Enter a Valid Password')
+}
+else{
+    alert('Incorrect Password')
+}
+
+
+//6.
+
+let hour = prompt('Enter any Hour of the day from 00 12')
+
+if (hour <= 12) {
+    alert('Good Day')
+}
+else{
+    alert('Good Evening')
+}
+
+//7.
+let time = prompt('Enter any time of the day in 24 hour clock')
+
+if (time == '13') {
+    alert('1 pm')
+}
+else if(time == '14') {
+    alert('2 pm')
+}
+else if (time == '15') {
+    alert('3 pm')
+}
+else if (time == '16') {
+    alert('4 pm')
+}
+else if (time == '17') {
+    alert('5 pm')
+}
+else if (time == '18') {
+    alert('6 pm')
+}
+else if (time == '19') {
+    alert('7 pm')
+}
+else if (time == '20') {
+    alert('8 pm')
+}
+else if (time == '21') {
+    alert('9 pm')
+}
+else if (time == '22') {
+    alert('10 pm')
+}
+else if (time == '23') {
+    alert('11 pm')
+}
+else if (time == '24') {
+    alert('12 pm')
+}
+else{
+    alert('you need to enter any number')
+}
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignments</title>
+    <style>
+        .nav{
+            text-align: center;
+            margin-top: 30px;
+        }
+        a{
+            margin-left: 20px;
+            background-color: antiquewhite;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+        a:hover{
+            box-shadow: 0.5px 0.5px 10px grey;
+            transition: 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="index.html">Assignment 1</a>
+        <a href="index2.html">Assignment 2</a>
+        <a href="#">Assignment 3</a>
+        <a href="index4.html">Assignment 4</a>
+    </div>
+    <br><br><br>
+
+    
+<script>
+//1.
+let namesliteral = []
+//2.
+let namesobject = []
+//3.
+let strings = ['orange','red']
+//4.
+let numbers = ['1','2','3']
+//5.
+let boolean = ['true','false']
+//6.
+let mixed = ['red,2,true']
+//7.
+let qualifications = ['SSC', 'HSC','BCS', 'BS', 'BCOM', 'MS','M. Phil.', 'PhD']
+
+document.write( '<b>', 'Education Qualification' ,'</b>' ,'<br>')
+document.write( '1. SSC','<br>')
+document.write( '2. HSC','<br>')
+document.write( '3. BCS','<br>')
+document.write( '4. BS','<br>')
+document.write( '5. BCOM','<br>')
+document.write( '6. MS','<br>')
+document.write( '7. M. Phil.','<br>')
+document.write( '8. PhD','<br>','<br>')
+
+//9.
+let names = ['Michael','John','Tony']
+let score = [420, 450, 480]
+
+document.write("Score of " + names[0] + " is " + score[0] + "." + ", Percentage: " + score[0]/500*100,'%','<br>');
+document.write("Score of " + names[1] + " is " + score[1] + "." + ", Percentage: " + score[1]/500*100,'%','<br>');
+document.write("Score of " + names[2] + " is " + score[2] + "." + ", Percentage: " +  score[2]/500*100,'%','<br>','<br>');
+
+//9.
+let clrNames = ["red", "green", "blue"];
+document.write(clrNames[0])
+document.write(clrNames[1])
+document.write(clrNames[2])
+
+let start = prompt('Add any colour of your choice')
+let end = prompt()
+
+
+</script>
+</body>
+</html>

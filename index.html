@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignments</title>
+    <style>
+        .nav{
+            text-align: center;
+            margin-top: 30px;
+        }
+        a{
+            margin-left: 20px;
+            background-color: antiquewhite;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+        a:hover{
+            box-shadow: 0.5px 0.5px 10px grey;
+            transition: 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="#">Assignment 1</a>
+        <a href="index2.html">Assignment 2</a>
+        <a href="index3.html">Assignment 3</a>
+        <a href="index4.html">Assignment 4</a>
+    </div>
+    <br><br><br>    
+
+<script>
+document.write('<h3>','1.','</h3>')
+
+let a = 10
+document.write('Result:','<br>')
+document.write('The value of a is:',[a],'<br>')
+document.write('...................................','<br>','<br>')
+
+
+document.write('The value of ++a is: ',++a,'<br>')
+document.write('Now the value of a is:',a,'<br>','<br>')
+
+// a = a++
+document.write('The value of a++ is:',a++,'<br>')
+document.write('Now the value of a is:',a,'<br>','<br>')
+
+// a = --a
+document.write('The value of --a is: ',--a,'<br>')
+document.write('Now the value of a is: ',a,'<br>','<br>')
+
+// a = a--
+document.write('The value of a-- is:',a--,'<br>')
+document.write('Now the value of a is:',a,'<br>','<br>')
+
+
+document.write('<h3>','2.','</h3>')
+
+a = 2 
+document.write('Value of a = ',[a],'<br>')
+let b = 1
+document.write('Value of b = ',[b],'<br>')
+
+let result = --a - --b + ++b + b--
+console.log(result);
+document.write('What does --a - --b + ++b + b-- = ??','<br>')
+
+document.write('a is ',[a],'<br>')
+document.write('b is ',[b],'<br>')
+document.write('Result is ',[result])
+
+let userName = prompt('Enter  your Name')
+alert('Hello' + " " + userName)
+
+document.write('<h3>','3.','</h3>')
+
+let userNumber = prompt('Enter any Number')
+
+if (userNumber == '') {
+document.write(5, ' x 1 = ',5*1 ,'<br>')
+document.write(5, ' x 2 = ',5*2 ,'<br>')
+document.write(5, ' x 3 = ',5*3 ,'<br>')
+document.write(5, ' x 4 = ',5*4 ,'<br>')
+document.write(5, ' x 5 = ',5*5 ,'<br>')
+document.write(5,' x 6 = ',5*6 ,'<br>')
+document.write(5, ' x 7 = ',5*7 ,'<br>')
+document.write(5, ' x 8 = ',5*8 ,'<br>')
+document.write(5, ' x 9 = ',5*9 ,'<br>')
+document.write(5, ' x 10 = ',5*10 ,'<br>')
+}
+else{
+document.write(userNumber, ' x 1 = ',userNumber*1 ,'<br>')
+document.write(userNumber, ' x 2 = ',userNumber*2 ,'<br>')
+document.write(userNumber, ' x 3 = ',userNumber*3 ,'<br>')
+document.write(userNumber, ' x 4 = ',userNumber*4 ,'<br>')
+document.write(userNumber, ' x 5 = ',userNumber*5 ,'<br>')
+document.write(userNumber, ' x 6 = ',userNumber*6 ,'<br>')
+document.write(userNumber, ' x 7 = ',userNumber*7 ,'<br>')
+document.write(userNumber, ' x 8 = ',userNumber*8 ,'<br>')
+document.write(userNumber, ' x 9 = ',userNumber*9 ,'<br>')
+document.write(userNumber, ' x 10 = ',userNumber*10 ,'<br>')
+}
+
+document.write('<h3>','4.','</h3>')
+
+let subject1 = prompt('Enter any 1st subject name')
+let subject2 = prompt('Enter any 2st subject name')
+let subject3 = prompt('Enter any 3st subject name')
+let ttlmarks = 100
+let obtmarks1 = +prompt('enter your obtained marks of', [subject1])
+let obtmarks2 = +prompt('enter your obtained marks of', [subject2])
+let obtmarks3 = +prompt('enter your obtained marks of', [subject3])
+
+document.write('<b>','Subject','</b>','&nbsp;','&nbsp;','&nbsp;')
+document.write('<b>','Total Marks','</b>','&nbsp;','&nbsp;','&nbsp;')
+document.write('<b>','Obtained Marks','</b>','&nbsp;','&nbsp;','&nbsp;')
+document.write('<b>','Percentage','</b>','&nbsp;','&nbsp;','&nbsp;','<br>','<br>')
+
+document.write(subject1,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',ttlmarks,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',
+obtmarks1,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',obtmarks1+'%','<br>')
+
+document.write(subject2,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',ttlmarks,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',
+obtmarks1,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',obtmarks2+'%','<br>')
+
+document.write(subject3,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',ttlmarks,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',
+obtmarks1,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',obtmarks3+'%','<br>')
+
+document.write(subject3,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',ttlmarks+ttlmarks+ttlmarks,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',
+obtmarks1+obtmarks2+obtmarks3,'&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;',obtmarks1+obtmarks2+obtmarks3/ttlmarks+ttlmarks+ttlmarks*1+'%')
+
+</script>
+</body>
+</html>
