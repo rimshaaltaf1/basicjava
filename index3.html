@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Assignments</title>
-    <style>
+     <style>
         .nav{
             text-align: center;
             margin-top: 30px;
@@ -21,7 +21,7 @@
             box-shadow: 0.5px 0.5px 10px grey;
             transition: 0.5s ease;
         }
-    </style>
+    </style> 
 </head>
 <body>
     
@@ -29,13 +29,14 @@
         <a href="index.html">Assignment 1</a>
         <a href="index2.html">Assignment 2</a>
         <a href="#">Assignment 3</a>
+        <a href="index5.html">Assignment 3 Part 2</a>
         <a href="index4.html">Assignment 4</a>
     </div>
     <br><br><br>
 
     
 <script>
-//1.
+// 1.
 let namesliteral = []
 //2.
 let namesobject = []
@@ -64,18 +65,41 @@ document.write( '8. PhD','<br>','<br>')
 let names = ['Michael','John','Tony']
 let score = [420, 450, 480]
 
-document.write("Score of " + names[0] + " is " + score[0] + "." + ", Percentage: " + score[0]/500*100,'%','<br>');
-document.write("Score of " + names[1] + " is " + score[1] + "." + ", Percentage: " + score[1]/500*100,'%','<br>');
-document.write("Score of " + names[2] + " is " + score[2] + "." + ", Percentage: " +  score[2]/500*100,'%','<br>','<br>');
+document.write("Score of " + names[0] + " is " + score[0] + "." + ", Percentage: " + score[0]/500*100,'%','<br>')
+document.write("Score of " + names[1] + " is " + score[1] + "." + ", Percentage: " + score[1]/500*100,'%','<br>')
+document.write("Score of " + names[2] + " is " + score[2] + "." + ", Percentage: " +  score[2]/500*100,'%','<br>','<br>')
 
 //9.
 let clrNames = ["red", "green", "blue"];
-document.write(clrNames[0])
-document.write(clrNames[1])
-document.write(clrNames[2])
+//a.
+let start = prompt('Add any colour of your choice for beginning')
+clrNames.unshift(start)
+document.write(clrNames,'<br>')
+//b.
+let end = prompt('Add any colour of your choice for end')
+clrNames.push(end);
+document.write(clrNames,'<br>')
+//c.
+clrNames.unshift("purple","yellow")
+document.write(clrNames,'<br>')
+//d.
+clrNames.shift();
+document.write(clrNames,'<br>')
+//e.
+clrNames.pop();
+document.write(clrNames,'<br>')
+//f.
+let indexToAdd = prompt(" index where you want to add a color:");
+let colorToAdd = prompt("Enter color  " + indexToAdd + ":");
+colorNames.splice(indexToAdd, 0, colorToAdd);
+document.write("Color Array after adding color at index " + indexToAdd + ":<br>" + colorNames);
+//g.
+let indexToDelete = prompt("Enter index from where you want to delete color(s):");
+let numToDelete = prompt("Enter number of colors to delete from index " + indexToDelete + ":");
+colorNames.splice(indexToDelete, numToDelete);
+document.write("Color Array after deleting " + numToDelete + " color(s) from index " + indexToDelete + ": <br>" + colorNames,'<br>','<br>');
 
-let start = prompt('Add any colour of your choice')
-let end = prompt()
+
 
 
 </script>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignments</title>
+     <style>
+        .nav{
+            text-align: center;
+            margin-top: 30px;
+        }
+        a{
+            margin-left: 20px;
+            background-color: antiquewhite;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+        a:hover{
+            box-shadow: 0.5px 0.5px 10px grey;
+            transition: 0.5s ease;
+        }
+    </style> 
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="index.html">Assignment 1</a>
+        <a href="index2.html">Assignment 2</a>
+        <a href="index3.html">Assignment 3</a>
+        <a href="#">Assignment 3 Part 2</a>
+        <a href="index4.html">Assignment 4</a>
+    </div>
+    <br><br><br>
+
+    
+<script>
+document.write('<h3>','From Q10.','</h3>')
+//10.
+let score = ['320','430','280','120']
+document.write('Score of students:',score,'<br>')
+let scorestd = ['120','280','320','430']
+document.write('Ordered score of students:',scorestd,'<br><br>')
+
+//11.
+let cities = ['Karachi','Lahore','Islamabad','Quetta','Peshawar',]
+document.write('Cities List: <br>', cities, '<br><br>')
+let slctdcities =['Islamabad','Quetta']
+document.write('selected cities list <br>',slctdcities,'<br><br>')
+
+//12.
+let array = ['This', 'is','my', 'cat','<br>'];
+document.write('Array <br>',array,'<br>')
+let string = ['This is my cat','<br><br>']
+document.write('String <br>',string)
+
+//13.
+let devices = ['keyboard','mouse','printer','monitor']
+document.write('Out: <br>', devices[0] ,'<br> Out: <br>', devices[1],'<br> Out: <br>', devices[2] ,'<br> Out: <br>', devices[3],'<br><br>')
+
+//14.
+let device = ['monitor','printer','mouse','keyboard']
+document.write('Out: <br>', device[0] ,'<br> Out: <br>', device[1],'<br> Out: <br>', device[2] ,'<br> Out: <br>', device[3],'<br><br>')
+
+//15.
+let mobile = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+document.write('<select>');
+for (let i = 0; i < mobile.length; i++) {
+    document.write('<option value="' + mobile[i] + '">' + mobile[i] + '</option>');
+}
+document.write('</select>');
+
+
+</script>
+</body>
+</html>
