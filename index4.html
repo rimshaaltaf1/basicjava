@@ -53,12 +53,104 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 //4.
-let number = +prompt('Enter a number to show itsmultiplication table')
-let tbllnght = prompt("Enter A Table Lenght")
-for (let i = 1; i <= tbllnght.length; i++) {
-    document.write(number + " X " + i + " = " + number * i + "<br>")
+let tableNumber = prompt("Enter a number to show its multiplication table")
+let tableLength = prompt("Enter the length of the multiplication table:")
+document.write("<br> Multiplication table of " + tableNumber + " for " + tableLength + " length:<br><br>")
+
+for (let i = 1; i <= tableLength; i++){
+    document.write(tableNumber + " x " + i + " = " + (tableNumber * i) + "<br>")
 }
 
+//5.
+fruits = ['apple','banana','mango','orange','strawberry']
+document.write()
+for (let i = 0; i <= 4; i++) {
+    document.write('<br>','Element at index '+ i + ' is ' + fruits[i])
+}
+
+//6.
+//a.
+let counting= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+for (let i = 1; i <= 1; i++) {
+    document.write('<br><br>','Counting: ',counting)
+}
+
+//b.
+document.write('<br> Reverse counting: ')
+for (let i = 10; i >= 1 ; i--) {
+    document.write(i + ',')
+}
+
+//c. & d.
+let counts = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+let even = []
+let odd = []
+for(let i = 0; i < counts.length; i++){
+    if (counts[i]%2 == 0) {
+        even.push(counts[i])
+    }
+    else{
+        odd.push(counts[i])
+    }
+}
+document.write('<br> Even: ',even)
+document.write('<br> Odd: ',odd)
+
+//e.
+let num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+let even1 = []
+for(let i = 0; i < num.length; i++){
+    if (num[i]%2 == 0) {
+        even1.push(num[i] + 'k')
+    }
+    else{
+        console.log('nothing');
+    }
+}
+document.write('<br> Series: ', even1) 
+
+//7.
+let a = ['cake','apple pie','cookie','chips','patties']
+let b = prompt("Enter an item to search in lowercase:")
+for (let i = 4; i < a.length; i++) {
+    if (b == 'cake') {
+        alert('Cake is Found in our bakery at index 0')
+    }
+    else if(b == 'apple pie'){
+        alert('Apple pie is Found in our bakery at index 1')
+    } 
+    else if(b == 'cookie'){
+        alert('Cookie is Found in our bakery at index 2')
+    } 
+    else if(b == 'chips'){
+        alert('Chips is Found in our bakery at index 3')
+    } 
+    else if(b == 'patties'){
+        alert('Patties is Found in our bakery at index 4')
+    }  
+    else{
+        alert('Sorry',b,'is not available in our bakery')
+    }
+}
+
+//8.
+let items = [24, 53, 78, 91, 12]
+document.write('<br><br> Array items: ',items)
+for (let i = 4; i < items.length; i++) {
+        document.write('<br>The largest number is ',items[3])
+}
+//9.
+document.write('<br><br> Array items: ',items)
+for (let i = 4; i < items.length; i++) {
+        document.write('<br>The smallest number is ',items[4])
+}
+
+//10.
+document.write("<br><br> Multiples of 5 from 1 to 100:<br>");
+for (let i = 1; i <= 100; i++)
+if (i%5 == 0) {
+    document.write(i + ",");
+}
 
 
 </script>
